@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <br>
+<h1 class="text-success text-center">Conditions</h1><br>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Find maximum between two numbers</h3><br>
+        <p class="text-primary font-weight-bold" id="maxOutPut"></p>
+        <input type="number" class="form-control" placeholder="Enter First Number" id="firstNumber"><br>
+        <input type="number" class="form-control" placeholder="Enter Second Number" id="secondNumber"><br>
+        <button class="btn btn-success" onclick="findMaxNum()">Find</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find maximum between three numbers</h3><br>
+        <p class="text-primary font-weight-bold" id="maxOutPut3"></p>
+        <input type="number" class="form-control" placeholder="Enter First Number" id="firstNumber1"><br>
+        <input type="number" class="form-control" placeholder="Enter Second Number" id="secondNumber2"><br>
+        <input type="number" class="form-control" placeholder="Enter Third Number" id="thirdNumber3"><br>
+        <button class="btn btn-success" onclick="findMaxNumBetween3()">Find</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Check Number is Negative or Positive</h3>
+        <p class="text-primary font-weight-bold" id="checkOutPut"></p>
+        <input type="number" class="form-control" placeholder="Enter a Number" id="numberInput"><br>
+        <button class="btn btn-success" onclick="positiveNegativeCheck()">Check</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Check Number is divisible of 5 and 11?</h3>
+        <p class="text-primary font-weight-bold" id="checkdivisibleOutPut"></p>
+        <input type="number" class="form-control" placeholder="Enter a Number" id="divisiblenumberInput"><br>
+        <button class="btn btn-success" onclick="divisibleNumberCheck()">Check</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Check Number is Even or Odd</h3>
+        <p class="text-primary font-weight-bold" id="checkNumberOutPut"></p>
+        <input type="number" class="form-control" id="evenOddInput" placeholder="Enter a Number"><br>
+        <button class="btn btn-success" onclick="evenOddCheck()">Check</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Check Year is Leap or Not</h3>
+        <p class="text-primary font-weight-bold" id="yearOutPut"></p>
+        <input type="number" class="form-control" id="yearInput" placeholder="Enter any Year"><br>
+        <button class="btn btn-success" onclick="yearCheck()">Check</button>
+    </div>
+</div><br>
+<div class="row">
+<div class="col-lg-6">
+    <h3>Check whether a character is alphabet or not</h3>
+    <p class="text-primary font-weight-bold" id="output"></p>
+    <input type="text" class="form-control" maxlength="1" placeholder="Enter a Charachter" id="input"><br>
+    <button class="btn btn-success" onclick="checkChar()">Check</button>
+</div>
+<div class="col-lg-6">
+    <h3>Vowel or Constant</h3>
+    <p class="text-primary font-weight-bold" id="charoutput"></p>
+    <input type="text" class="form-control" maxlength="1" id="charinput" placeholder="Enter Charachter"><br>
+    <button class="btn btn-success" onclick="vowelConst()">Check</button>
+</div>
+</div><br>
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Check whether Charachter is alphabet, digit or special character.</h3>
+        <p class="text-primary font-weight-bold" id="anyCharOutput"></p>
+        <input type="text" maxlength="1" class="form-control" placeholder="Enter any Charachter" id="anyCharInput"><br>
+        <button class="btn btn-success" onclick="checkcharNum()">Check</button>
+    </div>
+</div>
+
+<!-- Conditions Programs End -->
+
+<h1 class="text-success text-center">Strings Handling</h1><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Find length of a string</h3>
+        <p class="text-primary font-weight-bold" id="stringOutputOfLength" ></p>
+        <input type="text" class="form-control" id="stringInputForLength" placeholder="Enter String"><br>
+        <button class="btn btn-success" onclick="findLength()">Find</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Copy one string to another string</h3>
+        <p class="text-primary font-weight-bold" id="copyStringOutput" ></p>
+        <input type="text" class="form-control" id="copyStringInput1" placeholder="Enter First String"><br>
+        <input type="text" class="form-control" id="copyStringInput2" placeholder="Enter Second String"><br>
+        <button class="btn btn-success" onclick="copyString()">Copy</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Concatenate two strings</h3>
+        <p class="text-primary font-weight-bold" id="concatOutput"></p>
+        <input type="text" class="form-control" id="firstStringInput" placeholder="Enter First String"><br>
+        <input type="text" class="form-control" id="secondStringInput" placeholder="Enter Second String"><br>
+        <button class="btn btn-success" onclick="conCat()">Concatenate</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Compare two strings</h3>
+        <p class="text-primary font-weight-bold" id="compareOutput"></p>
+        <input type="text" class="form-control" id="firstCompareString" placeholder="Enter First String"><br>
+        <input type="text" class="form-control" id="secondCompareString" placeholder="Enter Second String"><br>
+        <button class="btn btn-success" onclick="compareStrings()">Compare</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Convert lowercase string to uppercase</h3>
+        <p class="text-primary font-weight-bold" id="stringToUpperCaseOutput"></p>
+        <input type="text" class="form-control" id="stringToLowerCaseInput" placeholder="Enter String"><br>
+        <button class="btn btn-success" onclick="toUpperCaseString()">Convert</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Convert Uppercase string to lowercase</h3>
+        <p class="text-primary font-weight-bold" id="stringToLowerCaseOutput"></p>
+        <input type="text" class="form-control" id="stringToUpperCaseInput" placeholder="Enter String"><br>
+        <button class="btn btn-success" onclick="toLowerCaseString()">Convert</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>toggle case of each character of a string</h3>
+        <p class="text-primary font-weight-bold" id="stringOutputForToggleCase"></p>
+        <input type="text" class="form-control" id="stringInputForToggleCase" placeholder="Enter String"><br>
+        <button class="btn btn-success" onclick="toToggleCase()">Convert</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find total number of alphabets, digits or special character in a string</h3>
+        <p class="text-primary font-weight-bold" id="countOutput"></p>
+        <input type="text" class="form-control" id="stringCountInput" placeholder="Enter Text"><br>
+        <button class="btn btn-success" onclick="countTotal()">Find</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Count total number of vowels and consonants in a string</h3>
+        <p class="text-primary font-weight-bold" id="stringCountOutPut"></p>
+        <input type="text" class="form-control" id="stringInputForCounting" placeholder="Enter a String">
+        <br><button class="btn btn-success" onclick="countString()">Check</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Count total number of words in a string</h3>
+        <p class="text-primary font-weight-bold" id="wordsOutput"></p>
+        <input type="text" class="form-control" id="countWordsInput" placeholder="Enter a String"><br>
+        <button class="btn btn-success" onclick="countWords()">Count</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Find reverse of a string</h3>
+        <p class="text-primary font-weight-bold" id="reverseStringOutput"></p>
+        <input type="text" class="form-control" id="reverseStringInput" placeholder="Enter a String"><br>
+        <button class="btn btn-success" onclick="reverseString()">Reverse</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>
+            Check whether a string is palindrome or not
+        </h3>
+        <p class="text-primary font-weight-bold" id="palindromeOutPut"></p>
+        <input type="text" class="form-control" id="palindromeInput" placeholder="Enter a String"><br>
+        <button class="btn btn-success" onclick="checkPalindrome()">Check</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Reverse order of words in a given string</h3>
+        <p class="text-primary font-weight-bold" id="stringWordReverseOutput"></p>
+        <input type="text" class="form-control" id="stringWordReverseInput" placeholder="Enter a String"><br>
+        <button class="btn btn-success" onclick="reverseWords()">Reverse</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find first occurrence of a character in a given string</h3>
+        <p class="text-primary font-weight-bold" id="stringOutput"></p>
+        <input type="text" class="form-control" id="inputString" placeholder="Enter a String"><br>
+        <input type="text" class="form-control" id="inputChar" maxlength="1" placeholder="Enter a Charachter"><br>
+        <button class="btn btn-success" onclick="checkIndex()">Check</button>  
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Find last occurrence of a character in a given string</h3>
+        <p class="text-primary font-weight-bold" id="lastCharIndex"></p>
+        <input type="text" class="form-control" id="fullStringInput" placeholder="Enter a String"><br>
+        <input type="text" class="form-control" id="lastChar" maxlength="1" placeholder="Enter a Charachter"><br>
+        <button class="btn btn-success" onclick="lastCharIndex()">Check</button>
+    </div>
+</div><br>
+
+<!-- String Handling Programs End -->
+
+<h1 class="text-success text-center">Array Handling</h1><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Read and print elements of array</h3>
+        <p class="text-primary font-weight-bold" id="arrayOutPut"></p>
+        <input type="number" class="form-control" id="numberOfElements" placeholder="Enter Number of Elements"><br>
+        <button class="btn btn-success" onclick="arrayHandling()">Array</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
